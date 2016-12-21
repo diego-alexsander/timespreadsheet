@@ -1,0 +1,92 @@
+/*====================================*\
+	#SETTINGS
+\*====================================*/
+
+
+/*------------------------------------*\
+	#MAIN
+\*------------------------------------*/
+
+$main-width: 1200px;
+
+
+/*------------------------------------*\
+	#COLORS
+\*------------------------------------*/
+
+$white: #ffffff;
+$gray-light: #f1f2f3;
+$gray: #F2EFEA;
+$gray-blue: #8790a1;
+$black: #323d48;
+
+$orange: #ff8507;
+$red: #e44242;
+$red-pastel: #bd5b5b;
+
+$straw: #DBD56E;
+$arsenic: #403D58;
+$turquoise: #66D7D1;
+$coral: #FC7753;
+
+
+
+
+/*
+	Percentage to darken() and lighten()
+*/
+$darken: 8%;
+$lighten: 7%;
+
+
+$primary: #24b6e6;
+$primary-dark: darken($primary, $darken);
+$secondary: $primary;
+
+
+/*------------------------------------*\
+	#FONT
+\*------------------------------------*/
+
+$font-family: 'Roboto', sans-serif;
+
+$font-weight-thin: 100; 
+$font-weight-light: 300; 
+$font-weight-normal: 400; 
+$font-weight-medium: 500; 
+$font-weight-bold: 700; 
+
+$font-weight: $font-weight-normal;
+
+$font-size: 100%;
+$line-height: 150%;
+
+$font-color: $black;
+$font-color-negative: $white;
+
+
+/*------------------------------------*\
+	#SIZES
+\*------------------------------------*/
+
+$icon-sizes: (
+	'small': 1rem,
+	'medium': 1.5rem,
+	'big': 2rem
+);
+$icon-size: 'medium';
+
+
+/*------------------------------------*\
+	#RADIUS
+\*------------------------------------*/
+
+$radius: 5px;
+
+
+/*------------------------------------*\
+	#TRANSITIONS
+\*------------------------------------*/
+
+$transition-duration: 0.2s;
+$transition-function: ease-out;

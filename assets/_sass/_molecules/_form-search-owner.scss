@@ -1,0 +1,39 @@
+/*====================================*\
+	# M - FORM SEARCH OWNER
+\*====================================*/
+
+
+.m-form-search-owner{
+	@extend .lp-g;
+
+	width: 100%;
+	vertical-align: middle;
+
+	> .title{
+		@include hide-text;
+
+		display: block;
+		height: 0;
+	}
+
+	> .input{
+		@include grid(22, 23, 23);
+
+		padding-left: 1rem;
+	}
+
+
+
+	> .action{
+		@include grid(2, 1, 1);
+
+		background: $white;
+		border: none;
+		margin: 0.3rem 0;
+
+		>.material-icons{
+			vertical-align: middle;
+		}
+	}
+
+}

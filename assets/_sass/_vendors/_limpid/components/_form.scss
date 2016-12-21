@@ -1,0 +1,57 @@
+/*====================================*\
+	#FORM
+\*====================================*/
+
+.form-row{
+	@extend .lp-g;
+
+	margin: 1rem -0.5rem 0;
+
+	&:first-child{
+		margin-top: 0;
+	}
+
+	&.collapse{
+		&, .form-row{
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.field{
+			padding: 0;
+
+			> input,
+			> select{
+				border-radius: 0;
+			}
+			&:first-child{
+				> input,
+				> select{
+					border-radius: 3px 0 0 3px;
+				}
+			}
+			&:last-child{
+				> input,
+				> select{
+					border-radius: 0 3px 3px 0;
+				}
+			}
+		}
+	}
+}
+	.field{
+		position: relative;
+		padding: 0 0.5rem;
+	}
+
+
+/*------------------------------------*\
+	#FORM BUTTONS
+\*------------------------------------*/
+
+.form-buttons{
+	@extend .is-full;
+
+	margin: 2rem 0 0;
+	text-align: right;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Limpid",
+  "version": "1.0.0",
+  "description": "Limpid",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "latest",
+    "gulp-sass": "latest",
+    "node-bourbon": "latest"
+  },
+  "author": "Douglas-Diego",
+  "license": "MIT",
+  "dependencies": {
+    "izimodal": "^1.4.1-d",
+    "mdi": "latest"
+  }
+}

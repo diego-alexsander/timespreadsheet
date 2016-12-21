@@ -1,0 +1,33 @@
+/*====================================*\
+	#ALL BUTTONS
+\*====================================*/
+
+.btn-start{
+	width: 100%;
+	background: $coral;
+	color: $white;
+	text-align: center;
+	border-radius: $radius;
+	padding: 0.5rem 1rem;
+
+	&:hover,
+	&:focus{
+		background: darken($coral, 5);
+		color: $white;
+	}
+}
+
+.btn-end{
+	width: 100%;
+	background: $gray-blue;
+	color: $white;
+	text-align: center;
+	border-radius: $radius;
+	padding: 0.5rem 1rem;
+
+	&:hover,
+	&:focus{
+		background: darken($gray-blue, 5);
+		color: $white;
+	}
+}
