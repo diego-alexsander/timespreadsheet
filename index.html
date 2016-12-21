@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Timespreadsheet</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+	<link rel="stylesheet" href="node_modules/izimodal/css/iziModal.min.css">
+	<link rel="stylesheet" href="assets/css/_sass/main.css">
+</head>
+<body>
+
+	<div id="authorize-div" style="display: block;">
+		<span>Authorize access to Google Sheets API</span>
+		<!--Button for the user to click to initiate auth sequence -->
+		<button id="authorize-button" onclick="handleAuthClick(event)">
+			Authoriza
+		</button>
+	</div>
+	<section class="o-header">
+		<form action="#!" class="m-form-search-owner">
+			<label for="inp-owner" class="title">
+				Busque por responsável
+			</label>
+			<input id="inp-owner" class="input" type="text" placeholder="Busque por responsável" />
+			<button class="action">
+				<i class="material-icons">&#xE8B6;</i>
+			</button>
+		</form>
+	</section>
+	<section id="list-tasks" class="o-content">
+	<article class="task" id="'+ titles.values.length +'">
+		<section class="header">
+			<div class="status">
+				status: <strong class="current"> '+ titles.values[i][4] +'</strong>
+			</div>
+			<div class="owner">
+				responsável: <strong class="current">'+ titles.values[i][3] +'</strong>
+			</div>
+		</section>
+		<section class="content">
+			<h1 class="title"> '+ titles.values[i][0] +'</h1>
+			<a href="#!" data-="start-task" class="btn-start"> Iniciar </a>
+			
+			<div class="clock">
+				<ul class="display">
+					<li class="hours">00:</li>
+					<li class="minutes">00:</li>
+					<li class="seconds">00</li>
+				</ul>
+				<div class="controls">
+						<a href="#!" class="pause">Pause</a>
+						<a href="#!" class="reset">Reset</a>
+				</div>
+			</div>
+
+			<a href="#!" class="btn-end is-hide"> Finalizar tarefa </a>
+		</section>
+	</article>
+	<article class="task is-doing" id="'+ titles.values.length +'">
+		<section class="header">
+			<div class="status">
+				status: <strong class="current"> '+ titles.values[i][4] +'</strong>
+			</div>
+			<div class="owner">
+				responsável: <strong class="current">'+ titles.values[i][3] +'</strong>
+			</div>
+		</section>
+		<section class="content">
+			<h1 class="title"> '+ titles.values[i][0] +'</h1>
+			<a href="#!" data-="start-task" class="btn-start"> Iniciar </a>
+			
+			<div class="clock">
+				<ul class="display">
+					<li class="item is-hours">00:</li>
+					<li class="item is-minutes">00:</li>
+					<li class="item is-seconds">00</li>
+				</ul>
+				<div class="controls">
+					<a href="#!" class="button">Pause</a>
+					<a href="#!" class="button is-reset">Reset</a>
+				</div>
+			</div>
+
+			<a href="#!" class="btn-end"> Finalizar tarefa </a>
+		</section>
+	</article>
+
+
+	</section>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="https://apis.google.com/js/client.js?onload=checkAuth"></script>
+	<script src="node_modules/izimodal/js/iziModal.min.js" type="text/javascript"></script>
+	<script src="assets/js/config.js"></script>
+	<script src="assets/js/scripts.js"></script>
+</body>
+</html>

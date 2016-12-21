@@ -1,0 +1,13 @@
+/*====================================*\
+	#HEADER
+\*====================================*/
+
+
+.o-header{
+	@extend .lp-g;
+
+	background: $coral;
+	width: 100%;
+	padding: 1.5rem;
+	color: $white;
+}
